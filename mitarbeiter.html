@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unterseite - Prüfungsaufgabe</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="vue.js"></script>
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div id="holder">
+    <header>
+      <h1 class="callout">Mein Team</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="mitarbeiter.html">Mitarbeiter</a></li>
+        <li><a href="#">Link Drei</a></li>
+        <li><a href="#">Link Vier</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Das beste Team aller Zeiten</h2>
+      <div class="tabelle">
+        <table>
+        <thead>
+          <tr>
+          <th @click="sortierenNach = 'vorname'">Vorname</th>
+          <th @click="sortierenNach = 'nachname'">Nachname</th>
+          <th @click="sortierenNach = 'abteilung'">Abteilung</th>
+          <th @click="sortierenNach = 'nummer'">Pers.Nr.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(person, index) in sortiertePersonen">
+            <td>{{ person.vorname }}</td>
+            <td>{{ person.nachname }}</td>
+            <td>{{ person.abteilung }}</td>
+            <td>{{ person.nummer }}</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      <article>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque massa vitae risus. Etiam iaculis imperdiet leo. Fusce eget dui. Proin at quam et arcu molestie scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent cursus ante eget neque. </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; Meine tolle Firma</p>
+    </footer>
+  
+  
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+</div>
+</body>
+
+</html>
