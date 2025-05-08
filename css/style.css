@@ -170,6 +170,7 @@ div h2, h3 {
 
 aside {
 background-color: rgb(241,222,225);
+   padding: 0.5em 0.5em;
 }
 
 table {
