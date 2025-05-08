@@ -168,6 +168,10 @@ div h2, h3 {
   font-size: 0.9rem;
 }
 
+aside {
+background-color: rgb(241,222,225);
+}
+
 table {
   border-collapse: collapse;
   font-size: 0.8rem;
